@@ -1,0 +1,9 @@
+base:
+  users:
+    nownabe:
+      authorized_keys_file: "~/.ssh/id_rsa.pub"
+      groups: wheel
+      password: env[base_password]
+
+  mailto:
+    root: env[base_mailto]
